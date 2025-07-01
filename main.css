@@ -1,0 +1,110 @@
+
+:root {
+  --bg: #f8f8f8;
+  --text: #111;
+  --item-bg: #fff;
+  --accent: #7a5ef8;
+  --line: #ddd;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eee;
+  --item-bg: #2a2a2a;
+  --accent: #9a8dfc;
+  --line: #333;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.container {
+  background-color: var(--item-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+}
+
+.add-btn, .toggle-theme {
+  background: var(--accent);
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ul.list {
+  list-style: none;
+  padding: 0;
+}
+
+li.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-text {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+
+
+
